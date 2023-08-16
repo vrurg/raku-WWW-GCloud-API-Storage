@@ -32,6 +32,8 @@ lets you do a lot with your storages.
 If there is anything you need but it is missing then, please, consider implementing it and submitting a PR. Any other
 approach would barely proces any outcome for what I do apologize!
 
+Either way, this module can be used as a reference implementation for a C<WWW::GGCloud> API.
+
 =head1 COPYRIGHT
 
 (c) 2023, Vadim Belman <vrurg@cpan.org>
