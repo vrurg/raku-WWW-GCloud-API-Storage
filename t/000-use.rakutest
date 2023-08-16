@@ -1,0 +1,8 @@
+use v6.e.PREVIEW;
+use Test::Async;
+
+plan 1;
+
+use-ok "WWW::GCloud::API::Storage", "module loads";
+
+done-testing;

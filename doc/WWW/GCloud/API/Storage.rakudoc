@@ -1,0 +1,44 @@
+=begin pod
+=head1 NAME
+
+C<WWW::GCloud::API::Storage> - C<WWW::GCloud> implementation of L<Google Storage API|https://cloud.google.com/storage/docs/json_api>
+
+=head1 SYNOPSIS
+
+=begin code :lang<raku>
+use v6.e.PREVIEW;
+use WWW::GCloud;
+use WWW::GCloud::API::Storage;
+use WWW::GCloud::R::Storage::Object;
+
+my $gcloud = WWW::GCloud.new;
+my $st = $gcloud.storage;
+
+await $st.objects.get("bucket-name", "object-name.ext", :media)
+        .andthen({ .result.send-to("output-file.ext", :!override) });
+=end code
+
+=head1 DESCRIPTION
+
+This module lacks complete documentation due to me not currently able to write it. Please, see some notes for
+L<C<WWW::GCloud>|https://raku.land/zef:vrurg/WWW::GCloud> framework. And look into I<exmaples/> where I tried to provide
+meaningful code to follow.
+
+=head2 Status
+
+This module is pre-beta, pre-anything. It is incomplete and likely not well thought out at places. But it already
+lets you do a lot with your storages.
+
+If there is anything you need but it is missing then, please, consider implementing it and submitting a PR. Any other
+approach would barely proces any outcome for what I do apologize!
+
+=head1 COPYRIGHT
+
+(c) 2023, Vadim Belman <vrurg@cpan.org>
+
+=head1 LICENSE
+
+Artistic License 2.0
+
+See the L<I<LICENSE>|../../../../LICENSE> file in this distribution.
+=end pod

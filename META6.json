@@ -1,0 +1,54 @@
+{
+  "name": "WWW::GCloud::API::Storage",
+  "description": "Google Cloud Storage API for WWW::GCloud",
+  "version": "0.0.1",
+  "authors": [
+    "Vadim Belman"
+  ],
+  "auth": "zef:vrurg",
+  "depends": [
+    "AttrX::Mooish:auth<zef:vrurg>:api<1.0.0+>:ver<1.0.4+>",
+    "WWW::GCloud:auth<zef:vrurg>",
+    "JSON::Marshal:ver<0.0.24>:auth<zef:jonathanstowe>:api<1.0>",
+    "JSON::Unmarshal:ver<0.15>:auth<zef:raku-community-modules>",
+    "MIME::Base64:ver<1.2.3>:auth<zef:raku-community-modules>",
+    "Method::Also:ver<0.0.8>:auth<zef:lizmat>",
+    "MIME::Types:ver<0.2>:auth<zef:raku-community-modules>"
+  ],
+  "build-depends": [],
+  "test-depends": [
+    "Test::Async:ver<0.1.14+>:auth<zef:vrurg>"
+  ],
+  "provides": {
+    "WWW::GCloud::API::Storage": "lib/WWW/GCloud/API/Storage.rakumod",
+    "WWW::GCloud::API::Storage::BucketAccessControls": "lib/WWW/GCloud/API/Storage/BucketAccessControls.rakumod",
+    "WWW::GCloud::API::Storage::Buckets": "lib/WWW/GCloud/API/Storage/Buckets.rakumod",
+    "WWW::GCloud::API::Storage::Objects": "lib/WWW/GCloud/API/Storage/Objects.rakumod",
+    "WWW::GCloud::API::Storage::Types": "lib/WWW/GCloud/API/Storage/Types.rakumod",
+    "WWW::GCloud::API::Storage::Upload": "lib/WWW/GCloud/API/Storage/Upload.rakumod",
+    "WWW::GCloud::API::Storage::Upload::Event": "lib/WWW/GCloud/API/Storage/Upload/Event.rakumod",
+    "WWW::GCloud::API::Storage::Upload::Event::ChunkRead": "lib/WWW/GCloud/API/Storage/Upload/Event.rakumod",
+    "WWW::GCloud::API::Storage::Upload::Event::Done": "lib/WWW/GCloud/API/Storage/Upload/Event.rakumod",
+    "WWW::GCloud::API::Storage::Upload::Resumable": "lib/WWW/GCloud/API/Storage/Upload/Resumable.rakumod",
+    "WWW::GCloud::API::Storage::Upload::Simple": "lib/WWW/GCloud/API/Storage/Upload/Simple.rakumod",
+    "WWW::GCloud::API::Storage::X": "lib/WWW/GCloud/API/Storage/X.rakumod",
+    "WWW::GCloud::R::Storage::Billing": "lib/WWW/GCloud/R/Storage/Billing.rakumod",
+    "WWW::GCloud::R::Storage::Bucket": "lib/WWW/GCloud/R/Storage/Bucket.rakumod",
+    "WWW::GCloud::R::Storage::BucketAccessControl": "lib/WWW/GCloud/R/Storage/BucketAccessControl.rakumod",
+    "WWW::GCloud::R::Storage::Buckets": "lib/WWW/GCloud/R/Storage/Buckets.rakumod",
+    "WWW::GCloud::R::Storage::CustomPlacementConfig": "lib/WWW/GCloud/R/Storage/CustomPlacementConfig.rakumod",
+    "WWW::GCloud::R::Storage::CustomerEncryption": "lib/WWW/GCloud/R/Storage/CustomerEncryption.rakumod",
+    "WWW::GCloud::R::Storage::IamConfiguration": "lib/WWW/GCloud/R/Storage/IamConfiguration.rakumod",
+    "WWW::GCloud::R::Storage::LifeCycle": "lib/WWW/GCloud/R/Storage/LifeCycle.rakumod",
+    "WWW::GCloud::R::Storage::Object": "lib/WWW/GCloud/R/Storage/Object.rakumod",
+    "WWW::GCloud::R::Storage::ObjectAccessControl": "lib/WWW/GCloud/R/Storage/ObjectAccessControl.rakumod",
+    "WWW::GCloud::R::Storage::Objects": "lib/WWW/GCloud/R/Storage/Objects.rakumod",
+    "WWW::GCloud::R::Storage::Owner": "lib/WWW/GCloud/R/Storage/Owner.rakumod",
+    "WWW::GCloud::RR::Storage::AccessControl": "lib/WWW/GCloud/RR/Storage/AccessControl.rakumod",
+    "WWW::GCloud::RR::Storage::ProjectTeam": "lib/WWW/GCloud/RR/Storage/ProjectTeam.rakumod"
+  },
+  "resources": [],
+  "license": "Artistic-2.0",
+  "source-url": "https://github.com/vrurg/raku-WWW-GCloud-API-Storage",
+  "raku": "6.e.PREVIEW"
+}

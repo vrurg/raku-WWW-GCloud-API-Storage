@@ -1,0 +1,7 @@
+.precomp/
+.idea/
+.vscode/
+*.iml
+._*
+cspell.json
+WWW-GCloud-v*.tar.gz
