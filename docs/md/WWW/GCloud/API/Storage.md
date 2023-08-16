@@ -31,6 +31,8 @@ This module is pre-beta, pre-anything. It is incomplete and likely not well thou
 
 If there is anything you need but it is missing then, please, consider implementing it and submitting a PR. Any other approach would barely proces any outcome for what I do apologize!
 
+Either way, this module can be used as a reference implementation for a `WWW::GGCloud` API.
+
 COPYRIGHT
 =========
 
