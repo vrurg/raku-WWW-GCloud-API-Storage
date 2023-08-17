@@ -33,6 +33,8 @@ If there is anything you need but it is missing then, please, consider implement
 
 Either way, this module can be used as a reference implementation for a `WWW::GGCloud` API.
 
+Do not hesitate to get in touch with me would you need any help. I know it could be annoying when a complex module has little to none docs. I'll do my best to fix the situation. But until then feel free to open an issue in the [GitHub repository](https://github.com/vrurg/raku-WWW-GCloud-API-Storage/issues), even if it's just a question.
+
 Uploading
 ---------
 
