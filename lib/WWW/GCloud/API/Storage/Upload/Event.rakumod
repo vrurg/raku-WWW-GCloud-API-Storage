@@ -36,7 +36,7 @@ class WWW::GCloud::API::Storage::Upload::Event::Retry
     does WWW::GCloud::API::Storage::Upload::Event::Meta
 {
     has UInt:D $.attempt is required;
-    has Int:D $.from is required;
+    has Real:D $.from is required;
 }
 
 class WWW::GCloud::API::Storage::Upload::Event::BufRead
@@ -45,5 +45,5 @@ class WWW::GCloud::API::Storage::Upload::Event::BufRead
 {
     has UInt:D $.bytes is required;
     has UInt $.offset;
-    has UInt $.from;
+    has Real $.from;
 }
