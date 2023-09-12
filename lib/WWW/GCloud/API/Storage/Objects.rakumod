@@ -226,7 +226,7 @@ multi method delete(::?CLASS:D: Str:D $bucket, Str:D :$folder, *%args)
 }
 
 proto method exists(|) {*}
-multi method exists( ::?CLASS:D: Str:D $bucket, Str:D :$folder!, *%args)
+multi method exists(::?CLASS:D: Str:D $bucket, Str:D :$folder!, *%args)
     is gc-params(
         :query( :STD-PARAMS, :delimiter(Str), :includeTrailingDelimiter(Bool), :projection(Str), :versions(Bool) ))
 {
@@ -237,14 +237,11 @@ multi method exists( ::?CLASS:D: Str:D $bucket, Str:D :$folder!, *%args)
             .andthen({ ? .result.items })
     }
 }
-multi method exists( ::?CLASS:D: GCSUri:D(GCSUriStr) :folder($gs-uri)!, *%args) {
-    if $gs-uri.scheme ne 'gs' {
-        self.throw: WWW::GCloud::API::Storage::X::NonGCSUri, :uri($gs-uri)
-    }
+multi method exists(::?CLASS:D: GCSUri:D(GCSUriStr) :folder($gs-uri)!, *%args) {
     # gs://bucket/folder/path
     self.exists: $gs-uri.bucket, folder => $gs-uri.object, |%args
 }
-multi method exists( ::?CLASS:D: Str:D $bucket, Str:D $matchGlob, *%args)
+multi method exists(::?CLASS:D: Str:D $bucket, Str:D $matchGlob, *%args)
     is gc-params(
         :query( :STD-PARAMS, :delimiter(Str), :includeTrailingDelimiter(Bool), :projection(Str), :versions(Bool) ))
 {
@@ -254,4 +251,7 @@ multi method exists( ::?CLASS:D: Str:D $bucket, Str:D $matchGlob, *%args)
         $.api.get('b/' ~ $bucket ~ '/o' , :as(WWW::GCloud::R::Storage::Objects), :%query)
             .andthen({ ? .result.items })
     }
+}
+multi method exists(::?CLASS:D: GCSUri:D(GCSUriStr) $gs-uri, *%args) {
+    self.exists: $gs-uri.bucket, $gs-uri.object, |%args
 }
