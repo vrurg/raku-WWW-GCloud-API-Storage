@@ -1,7 +1,7 @@
 =begin pod
 =head1 CHANGELOG
 
-=head v0.0.4
+=head v0.0.3
 
 =item Added support for Google Cloud Storage URI (I<gs://...>) to the Objects resource method C<exists>
 
