@@ -3,5 +3,6 @@
 .vscode/
 *.iml
 ._*
+.gen-doc-*
 cspell.json
 WWW-GCloud-API-Storage-v*.tar.gz

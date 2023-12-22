@@ -5,5 +5,5 @@ use WWW::GCloud::Record;
 
 also does WWW::GCloud::Record;
 
-has Str $.projectNumber is kebabish;
+has Str $.projectNumber;
 has Str $.team;

@@ -1,0 +1,10 @@
+=begin pod
+=config :!index :title("WWW::GCloud::API::Storage Document Pages")
+
+=head1 WWW::GCloud::API::Storage Document Pages
+
+=item L«C«..::ChangeLog»|rakudoc:..::ChangeLog»
+=item L«C«README»|rakudoc:..::README»
+=item L«C«WWW::GCloud::API::Storage»|rakudoc:WWW::GCloud::API::Storage»
+
+=end pod

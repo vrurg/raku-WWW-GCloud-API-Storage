@@ -7,9 +7,8 @@
     "build-depends": [],
     "depends": [
         "AttrX::Mooish:auth<zef:vrurg>:api<1.0.0+>:ver<1.0.4+>",
-        "WWW::GCloud:auth<zef:vrurg>:ver<0.0.4>",
-        "JSON::Marshal:ver<0.0.24>:auth<zef:jonathanstowe>:api<1.0>",
-        "JSON::Unmarshal:ver<0.15>:auth<zef:raku-community-modules>",
+        "WWW::GCloud:auth<zef:vrurg>:ver<0.0.6>",
+        "JSON::Class:auth<zef:vrurg>:version<0.0.5>",
         "MIME::Base64:ver<1.2.3>:auth<zef:raku-community-modules>",
         "Method::Also:ver<0.0.8>:auth<zef:lizmat>",
         "MIME::Types:ver<0.2>:auth<zef:raku-community-modules>"
@@ -51,5 +50,5 @@
     "test-depends": [
         "Test::Async:ver<0.1.14+>:auth<zef:vrurg>"
     ],
-    "version": "0.0.3"
+    "version": "0.0.4"
 }

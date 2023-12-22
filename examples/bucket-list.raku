@@ -8,6 +8,7 @@ sub MAIN(Str:D $project-id) {
     my $gcloud = WWW::GCloud.new;
     my $st = $gcloud.storage;
     for $st.buckets.list($project-id).list {
+        say "=== ", .name, " ===";
         say Dump( $_,
                   :skip-methods,
                   :no-postfix,

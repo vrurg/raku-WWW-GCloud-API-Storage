@@ -17,24 +17,24 @@ also is gc-record;
 also does WWW::GCloud::RR::Kind;
 
 class Encryption is gc-record {
-    has Str $.defaultKmsKeyName is kebabish;
+    has Str $.defaultKmsKeyName;
 }
 
 class Website is gc-record {
-    has Str $.mainPageSuffix is kebabish;
-    has Str $.notFoundPage is kebabish;
+    has Str $.mainPageSuffix;
+    has Str $.notFoundPage;
 }
 
 class Logging is gc-record {
-    has Str $.logBucket is kebabish;
-    has Str $.logObjectPrefix is kebabish;
+    has Str $.logBucket;
+    has Str $.logObjectPrefix;
 }
 
 class CORS is gc-record {
     has Str @.origin;
     has Str @.method;
-    has Str @.responseHeader is kebabish;
-    has Int(Str) $.maxAgeSeconds is kebabish;
+    has Str @.responseHeader;
+    has Int(Str) $.maxAgeSeconds;
 }
 
 class Versioning is gc-record {

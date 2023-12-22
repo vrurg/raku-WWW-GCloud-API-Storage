@@ -21,7 +21,7 @@ await $st.objects.get("bucket-name", "object-name.ext", :media)
 =head1 DESCRIPTION
 
 This module lacks complete documentation due to me not currently able to write it. Please, see some notes for
-L<C<WWW::GCloud>|https://raku.land/zef:vrurg/WWW::GCloud> framework. And look into I<exmaples/> where I tried to provide
+L«C<WWW::GCloud>|rakudoc:WWW::GCloud:auth<zef:vrurg>» framework. And look into I<exmaples/> where I tried to provide
 meaningful code to follow.
 
 =head2 Status
@@ -72,5 +72,6 @@ See I<exmaples/bucket-upload.raku> for a reference implementation.
 
 Artistic License 2.0
 
-See the L<I<LICENSE>|../../../../LICENSE> file in this distribution.
+See the L<I<LICENSE>|file:LICENSE> file in this distribution.
 =end pod
+

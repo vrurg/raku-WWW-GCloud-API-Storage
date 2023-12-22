@@ -1,12 +1,10 @@
-NAME
-====
+# NAME
 
 `WWW::GCloud::API::Storage` - `WWW::GCloud` implementation of [Google Storage API](https://cloud.google.com/storage/docs/json_api)
 
-SYNOPSIS
-========
+# SYNOPSIS
 
-```raku
+``` raku
 use v6.e.PREVIEW;
 use WWW::GCloud;
 use WWW::GCloud::API::Storage;
@@ -19,24 +17,21 @@ await $st.objects.get("bucket-name", "object-name.ext", :media)
         .andthen({ .result.send-to("output-file.ext", :!override) });
 ```
 
-DESCRIPTION
-===========
+# DESCRIPTION
 
 This module lacks complete documentation due to me not currently able to write it. Please, see some notes for [`WWW::GCloud`](https://raku.land/zef:vrurg/WWW::GCloud) framework. And look into *exmaples/* where I tried to provide meaningful code to follow.
 
-Status
-------
+## Status
 
 This module is pre-beta, pre-anything. It is incomplete and likely not well thought out at places. But it already lets you do a lot with your storages.
 
-If there is anything you need but it is missing then, please, consider implementing it and submitting a PR. Any other approach would barely proces any outcome for what I do apologize!
+If there is anything you need but it is missing then, please, consider implementing it and submitting a PR. Any other approach would barely proces any outcome for what I do apologize\!
 
 Either way, this module can be used as a reference implementation for a `WWW::GGCloud` API.
 
 Do not hesitate to get in touch with me would you need any help. I know it could be annoying when a complex module has little to none docs. I'll do my best to fix the situation. But until then feel free to open an issue in the [GitHub repository](https://github.com/vrurg/raku-WWW-GCloud-API-Storage/issues), even if it's just a question.
 
-Uploading
----------
+## Uploading
 
 Contrary to a typical convention about API resource methods returning either a [`Promise`](https://docs.raku.org/type/Promise) or a [`Supply`](https://docs.raku.org/type/Supply), when an upload is requested with `insert` method of `objects` resource an uploader object is given back to the user. The object would be implementing `WWW::GCloud::API::Storage::Upload` role.
 
@@ -52,15 +47,12 @@ Since the actual REST calls are done by the uploader its `upload` method is the 
 
 See *exmaples/bucket-upload.raku* for a reference implementation.
 
-COPYRIGHT
-=========
+# COPYRIGHT
 
 (c) 2023, Vadim Belman <vrurg@cpan.org>
 
-LICENSE
-=======
+# LICENSE
 
 Artistic License 2.0
 
-See the [*LICENSE*](../../../../LICENSE) file in this distribution.
-
+See the [*LICENSE*](LICENSE) file in this distribution.

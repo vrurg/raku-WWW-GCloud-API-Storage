@@ -3,7 +3,7 @@ use v6.e.PREVIEW;
 use WWW::GCloud;
 use WWW::GCloud::API::Storage;
 use Data::Dump;
-use Base64::Native;
+use MIME::Base64;
 use OpenSSL::Digest::MD5;
 
 sub MAIN(Str:D $bucket-name) {
@@ -22,7 +22,7 @@ sub MAIN(Str:D $bucket-name) {
     for $st.objects.list($bucket-name).list -> $b {
         $for-download //= $b;
         say $b;
-        say " - ", base64-decode($b.md5Hash).list.map(*.fmt('%02x')).join;
+        say " - ", MIME::Base64.decode($b.md5Hash).list.map(*.fmt('%02x')).join;
     }
 
     my $dest = $*PROGRAM.parent(1).add($for-download.name);
