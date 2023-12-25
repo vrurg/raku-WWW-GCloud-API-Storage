@@ -1,8 +1,17 @@
 =begin pod
+=config :title<Changes>
 =head1 CHANGELOG
 
-=head2 v0.0.3
+=begin item
+B<v0.0.4>
+
+=item Switched over to L<C<JSON::Class:auth<zef:vrurg>>> framework
+=end item
+
+=begin item
+B<v0.0.3>
 
 =item Added support for Google Cloud Storage URI (I<gs://...>) to the Objects resource method C<exists>
+=end item
 
 =end pod
