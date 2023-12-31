@@ -1,0 +1,23 @@
+use v6.e.PREVIEW;
+use Test::Async;
+
+use WWW::GCloud::Record;
+use WWW::GCloud::API::Storage;
+use WWW::GCloud::API::Storage::Types;
+
+plan 4;
+
+class Locator is gc-record {
+    has GCSUri:D(GCSUriStr) $.gc-uri is required is json(:to-json<Str>);
+}
+
+my $l;
+lives-ok { $l = Locator.from-json(q<{"gc-uri":"gs://fta-doc/fta-annotations/sources/a19"}>) }, "gs:// URI deserialized";
+
+given $l.gc-uri {
+    is .scheme, "gs", "scheme is 'gs'";
+    is .authority, "fta-doc", "authority";
+    is .path, "/fta-annotations/sources/a19", "path";
+}
+
+done-testing;
