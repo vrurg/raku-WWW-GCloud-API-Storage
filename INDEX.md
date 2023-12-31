@@ -1,6 +1,6 @@
 # WWW::GCloud::API::Storage Document Pages
 
-  - [`..::ChangeLog`](ChangeLog.md)
+  - [`Changes`](ChangeLog.md)
 
   - [`README`](README.md)
 

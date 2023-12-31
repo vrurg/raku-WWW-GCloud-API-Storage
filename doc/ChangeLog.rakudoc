@@ -1,11 +1,11 @@
 =begin pod
-=config :title<Changes>
+=config  :title<Changes>
 =head1 CHANGELOG
 
 =begin item
 B<v0.0.4>
 
-=item Switched over to L<C<JSON::Class:auth<zef:vrurg>>> framework
+=item Switched over to L«C<JSON::Class:auth<zef:vrurg>>|rakudoc:JSON::Class:auth<zef:vrurg>» framework
 =end item
 
 =begin item
@@ -15,3 +15,4 @@ B<v0.0.3>
 =end item
 
 =end pod
+
