@@ -7,7 +7,7 @@
     "build-depends": [],
     "depends": [
         "AttrX::Mooish:auth<zef:vrurg>:api<1.0.6>:ver<1.0.9+>",
-        "WWW::GCloud:auth<zef:vrurg>:ver<0.0.6>",
+        "WWW::GCloud:auth<zef:vrurg>:ver<0.0.7>",
         "JSON::Class:auth<zef:vrurg>:version<0.0.5>",
         "MIME::Base64:ver<1.2.3>:auth<zef:raku-community-modules>",
         "Method::Also:ver<0.0.8>:auth<zef:lizmat>",
