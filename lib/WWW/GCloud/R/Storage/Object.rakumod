@@ -3,8 +3,6 @@ use v6.e.PREVIEW;
 unit class WWW::GCloud::R::Storage::Object;
 
 use MIME::Base64;
-use JSON::Marshal;
-use JSON::Unmarshal;
 use Method::Also;
 use WWW::GCloud::Record;
 use WWW::GCloud::Types;
