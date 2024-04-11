@@ -50,5 +50,5 @@
     "test-depends": [
         "Test::Async:ver<0.1.14+>:auth<zef:vrurg>"
     ],
-    "version": "0.0.5"
+    "version": "0.0.6"
 }
