@@ -5,6 +5,7 @@
 =begin item
 B<v0.0.5>
 
+=item Bump dependencies for compatibility with the latest Rakudo builds
 =end item
 
 =begin item

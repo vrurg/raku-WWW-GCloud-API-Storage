@@ -1,6 +1,8 @@
 # CHANGELOG
 
   - **v0.0.5**
+    
+      - Bump dependencies for compatibility with the latest Rakudo builds
 
   - **v0.0.4**
     
